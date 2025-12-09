@@ -4,16 +4,31 @@
 <head>
     <title>Walmart product page</title>
     <style>
-#color{
-    color: gold
-}
+        #color {
+            color: gold
+        }
+        /* Add CSS here to improve how your product descriptions appear */
+        .product-card {
+            display: inline-block; /* Allows items to sit side-by-side if space allows */
+            width: 220px; /* Example width for each product column */
+            margin: 15px;
+            text-align: center;
+            border: 1px solid #ccc; /* Helps visualize the link area */
+            padding: 10px;
+            text-decoration: none; /* Removes underline from links */
+            color: #000; /* Makes text black instead of link blue/purple */
+        }
+        .product-card img {
+            display: block;
+            margin: 0 auto 10px auto; /* Center image and add spacing below it */
+        }
     </style>
     <link href="Walmart.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="https://lsls13.github.io/walmart.html"> <img id="logo" src="walmartLogo.png" /> </a>
+        <a href="https://lsls13.github.io/walmart.html"> <img id="logo" src="walmartLogo.png" alt="Walmart Logo" /> </a>
         <p id="products"> Products </p>
         <a id="visit" href="https://lsls13.github.io/visit.html"> Visit us </a>
         <a id="contact" href="https://lsls13.github.io/contact.html"> About us </a>
@@ -21,47 +36,45 @@
 
     <h1 id="center">Walmart Product Page</h1>
     <h2 id="center">Clothes</h2>
-    <p id="center"> <img src="Hoodie.avif" alt="Polo" width="500" height="500"></p>
-    <p id="center"> <a href="https://www.walmart.com/ip/Gildan-Unisex-Pullover-Hooded-Sweatshirt/18010357566"> Hooded sweatshirt. </a></p>
-    <p id="center"> <img src="Hoodie.avif" alt="Polo" width="500" height="500"></p>
-    <p id="center"><a href="https://www.walmart.com/ip/Iceglad-Mens-Pullover-Sweater-Soft-Lightweight-Casual-Classic-Crewneck-Knitwear-Sweaters-with-Ribbing-Edge-Black-l/2315353370?classType=VARIANT&athbdg=L1600&from=/search">
-     </a>
-        <p><img src="Sweater.jpg" alt="Sweater" width="100" height="100"></p>
-        <p>Mens Pullover Sweater Soft Lightweight Casual $17.98</p>
+
+    <a href="https://www.walmart.com/ip/Iceglad-Mens-Pullover-Sweater-Soft-Lightweight-Casual-Classic-Crewneck-Knitwear-Sweaters-with-Ribbing-Edge-Black-l/2315353370?classType=VARIANT&athbdg=L1600&from=/search" class="product-card">
+        <img src="Sweater.jpg" alt="Sweater" width="100" height="100">
+        <p>Mens Pullover Sweater Soft Lightweight Casual **$17.98**</p>
     </a>
-    <a href="https://www.walmart.com/ip/George-Men-s-Slim-Chino-Pants/375097872">
-        <p> <img src="Pants.webp" alt="Pants" width="100" height="100">
-        </p>
-        <p>George Men's Slim Chino Pants, Sizes 28-59 $19.98</p>
+
+    <a href="https://www.walmart.com/ip/George-Men-s-Slim-Chino-Pants/375097872" class="product-card">
+        <img src="Pants.webp" alt="Pants" width="100" height="100">
+        <p>George Men's Slim Chino Pants, Sizes 28-59 **$19.98**</p>
     </a>
-    <a
-        href="https://www.walmart.com/ip/Ozark-Trail-Asheville-Dual-Carry-Backpack-Black-Everyday-Polyester-Adult-Teen/5020133524?variantFieldId=actual_color&classType=VARIANT&athbdg=L1600&from=/search">
-        <p> <img src="Backpack.jpg" alt="backpack" width="500" height="500"></p>
-        <p>Ozark Trail Asheville Dual-Carry Backpack 22 Liter, Black, Polyester, Adult, Teen, Unisex $19.97</p>
+    
+    <h2 id="center">Accessories</h2>
+
+    <a href="https://www.walmart.com/ip/Ozark-Trail-Asheville-Dual-Carry-Backpack-Black-Everyday-Polyester-Adult-Teen/5020133524?variantFieldId=actual_color&classType=VARIANT&athbdg=L1600&from=/search" class="product-card">
+        <img src="Backpack.jpg" alt="backpack" width="100" height="100">
+        <p>Ozark Trail Asheville Dual-Carry Backpack 22 Liter, Black... **$19.97**</p>
     </a>
-    <a
-        href="https://www.walmart.com/ip/Fresh-Honeycrisp-Apple-Each/44390950?classType=REGULAR&athbdg=L1300&from=/search">
-        <h2>Fruits</h2>
-        <p> <img src="apple.avif" alt="red apple" width="100" height="100"></p>
-        <p>Fresh Honeycrisp Apple $1.06 </p>
+    
+    <h2 id="center">Fruits</h2>
+
+    <a href="https://www.walmart.com/ip/Fresh-Honeycrisp-Apple-Each/44390950?classType=REGULAR&athbdg=L1300&from=/search" class="product-card">
+        <img src="apple.avif" alt="red apple" width="100" height="100">
+        <p>Fresh Honeycrisp Apple **$1.06** </p>
     </a>
-    <a
-        href="https://www.walmart.com/ip/Fresh-Seedless-Watermelon-Each/44391101?classType=REGULAR&athbdg=L1200&from=/search">
-        <p> <img src="Watermelon.avif" alt="watermelon" width="100" height="100"></p>
-        <p>Fresh Seedless Watermelon $7.88</p>
+
+    <a href="https://www.walmart.com/ip/Fresh-Seedless-Watermelon-Each/44391101?classType=REGULAR&athbdg=L1200&from=/search" class="product-card">
+        <img src="Watermelon.avif" alt="watermelon" width="100" height="100">
+        <p>Fresh Seedless Watermelon **$7.88**</p>
     </a>
-   <p id="center"><a href="https://www.walmart.com/ip/Marketside-Fresh-Organic-Bananas-Bunch/51259338?classType=REGULAR&from=/search">
-        <p><img src="Bannanas.avif" alt="bunch of Bannanas" width="100" height="100"></p>
-        <p>Marketside Fresh Organic Bananas $1.71</p>
+    
+    <a href="https://www.walmart.com/ip/Marketside-Fresh-Organic-Bananas-Bunch/51259338?classType=REGULAR&from=/search" class="product-card">
+        <img src="Bannanas.avif" alt="bunch of Bannanas" width="100" height="100">
+        <p>Marketside Fresh Organic Bananas **$1.71**</p>
     </a>
-   </p>
-    <a href="https://www.walmart.com/ip/Fresh-Mangoes-Each-Sweet/994998279?classType=REGULAR&athbdg=L1300&from=/search">
-        "<p><img src="Mango.avif" alt="Mango" width="100" height="100"></p>
-        <p>Fresh Mangoes $1.08</p>
+
+    <a href="https://www.walmart.com/ip/Fresh-Mangoes-Each-Sweet/994998279?classType=REGULAR&athbdg=L1300&from=/search" class="product-card">
+        <img src="Mango.avif" alt="Mango" width="100" height="100">
+        <p>Fresh Mangoes **$1.08**</p>
     </a>
 </body>
 
 </html>
-<footer>
-
-</footer>
